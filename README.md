@@ -1,0 +1,1 @@
+This is a pet project for a blog based on Django!
