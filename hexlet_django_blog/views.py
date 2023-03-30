@@ -11,7 +11,9 @@ class HomePageView(TemplateView):
         return context
 
     def get(self, request, *args, **kwargs):
-        return redirect('article', tags='python', article_id=42)
+        return render(request, 'index.html', context={
+            'who': 'World',
+        })
 
 
 def about(request):
